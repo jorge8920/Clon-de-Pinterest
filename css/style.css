@@ -1,0 +1,413 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+       font-family: 'Red Hat Display', sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding: 15px 15px;
+    background: #fff;
+    display: flex;
+    flex: 1 1 auto;
+    z-index: 10000;
+}
+.nav-h{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.iconmenu{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-image: url(../img/favicon-32x32.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 24px;
+    opacity: 0.8;
+    vertical-align: middle;
+}
+.iconmenu :hover{
+    background-color: #ebebec;
+}
+.mainnav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainnav ul li {
+    padding-left: 5px;
+    display: inline-block;
+}
+.mainnav ul li a{
+    padding: 17px 20px;
+    margin-left: -15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+.mainnav ul li a:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.mainnav .diev{
+    text-decoration: none;
+}
+.mainnav .diev .diev-j{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+}
+.mainnav .diev .diev-j:hover{
+    background: none;
+    cursor: pointer;
+}
+.search{
+    width: 86.50%;
+    height: 100%;
+    margin-left: 3px;
+}
+form{
+    display: block;
+    margin-top: 0em;
+}
+.fly{
+    position: relative;
+    padding-left: 16px;
+}
+.run{
+    width: 100%;
+    height: 48px;
+    background: #e9e9e9;
+    display: flex;
+    border: none;
+    border-radius: 24px;
+    box-shadow: none;
+    z-index: 3;
+}
+.run:hover{
+    background-color: #e1e1e1;
+}
+.speak{
+    display: flex;
+    flex: 0 0 auto;
+    padding-left: 15px;
+    padding-right: 8px;
+    align-items: stretch;
+    flex-direction: row;
+}
+.do{
+    width: 24px;
+    padding: 0 0;
+    background: transparent;
+    align-items: center;
+    display: flex;
+    flex: 1 0 auto;
+    cursor: pointer;
+    outline: none;
+    border: 0; 
+}
+.go{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    z-index: 3;
+}
+.drive{
+    height: 34px;
+    margin-top: 7px;
+    margin-right: 40px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: var(--color-dark);
+    word-wrap: break-word;
+    display: flex;
+    flex: 100%;
+    font-size: 16px;
+    outline: none;
+}
+.glFyf::placeholder{
+    font-size: medium;
+}
+.nav-hh{
+    width: 14%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-right-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-right-section ul li{
+    display: inline-block;
+}
+.nav-right-section ul li a{
+    min-width: 96px;
+    padding: 17px 0;
+    margin-left: -15px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+.nav-right-section ul li a:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.nav-right-section .diev{
+    text-decoration: none;
+}
+.nav-right-section .diev .diev-j{
+    min-width: 96px;
+    padding: 9px 0;
+    border-radius: 4px;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    box-sizing: border-box;
+}
+.nav-right-section .diev:hover{
+    background-color: none;
+    cursor: pointer;
+}
+.icon-menu-ntfy{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-top: 2px;
+    border-radius: 50%;
+    background-image: url(../img/notification.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 24px;
+    opacity: 0.8;
+    vertical-align: middle;
+}
+.icon-menu-ntfy:hover{
+    background-color: #ebebec;
+    cursor: pointer;
+}
+[data-notify]{
+    position: absolute;
+}
+[data-notify]::after{
+    content: attr(data-notify);
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 2px;
+    right: -45px;
+    background: #e60023;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 11px;
+    line-height: 22px;
+}
+.icon-message{
+    width: 48px;
+    height: 48px;
+    margin-top: 2px;
+    border-radius: 50%;
+    background-image: url(../img/messages.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 24px;
+    opacity: 0.8;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.icon-message:hover{
+    background-color: #ebebec;
+    cursor: pointer;
+}
+.end-user{
+    width: 48px;
+    height: 48px;
+    margin-top: 2px;
+    border-radius: 50%;
+    line-height: 24px;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.end-user img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+}
+.end-user:hover{
+    background-color: #ebebec;
+    cursor: pointer;
+}
+.iconmess{
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    border-radius: 50%;
+    line-height: 24px;
+    opacity: 0.8;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+}
+.iconmess:hover{
+    background-color: #ebebec;
+    cursor: pointer;
+}
+.mainlife{
+    height: auto;
+    overflow: hidden;
+}
+.mainlifeone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainlifecontainer{
+    max-width: 95%;
+    height: auto;
+    padding-top: 80px;
+    columns: 13 200px;
+    column-gap: 18px;
+}
+.pinturecard{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.pinturecard:hover{
+    cursor: zoom-in;
+}
+.hover-pinture{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+}
+.paint{
+    width: 100%;
+    height: 100%;
+}
+.paint img{
+    max-width: 100%;
+    vertical-align: top;
+    border-radius: 20px;
+}
+.pinture{
+    backface-visibility: hidden;
+}
+.hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-radius: 20px;
+    background-color: #000;
+    cursor: zoom-in;
+    overflow: hidden;
+}
+.hover:hover{
+    opacity: 1;
+    background: rgb(0,0,0,.2);
+}
+.button{
+    position: absolute;
+    top: 28px;
+    right: 15px;
+}
+.button a{
+    padding: 15px 15px;
+    background: #e60023;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.button a:hover{
+    background: #ad081b;
+}
+.suspensionpoints{
+    position: absolute;
+    right: 15px;
+    bottom: 28px; 
+}
+.suspensionpoints a{
+    padding: 10px 14px;
+    background: #ebebec;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #111;
+}
+.squarebracket{
+    position: absolute;
+    right: 65px;
+    bottom: 28px; 
+}
+.squarebracket a{
+    padding: 10px 14px;
+    background: #ebebec;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #111;
+}
+.descripcion{
+    width: 100%;
+}
+.descripcion p{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 0.90em;
+    font-weight: 600;
+    color: #111;
+}
+@media(max-width:1366px){
+    .search{
+        width: 68%;
+        height: 100%;
+        margin-left: 10px;
+    }
+    .mainlifecontainer{
+        max-width: 92%;
+    }
+}
